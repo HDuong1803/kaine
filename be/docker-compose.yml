@@ -27,7 +27,7 @@ services:
       - ${NETWORK}
 
 networks:
-  shop_network:
+  kaine_network:
     driver: bridge
     name: ${NETWORK}
 

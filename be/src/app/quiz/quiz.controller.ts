@@ -1,4 +1,4 @@
-import { InputCreateQuestion, InputCreateQuiz, InputCreateTopic, InputUpdateQuestion, InputUpdateQuiz, InputUpdateTopic, type IUser } from '@app'
+import { InputCreateQuestion, InputCreateQuiz, InputUpdateQuestion, InputUpdateQuiz } from '@app'
 import { type Option } from '@constants'
 import { logError, onError, onSuccess } from '@constants'
 // import { AdminMiddleware, AuthMiddleware } from '@middlewares'
@@ -27,7 +27,7 @@ import {
 // })
 // @Middlewares([AuthMiddleware])
 export class QuizzesController extends Controller {
-  @Post('topic')
+  @Post('quiz')
   @Example<any>(
     {
       data: {},
@@ -37,126 +37,12 @@ export class QuizzesController extends Controller {
     },
     'Success'
   )
-  public async createTopic(
+  public async createQuiz(
     @Request() req: ExpressRequest,
-    @Body() body: InputCreateTopic
-  ): Promise<Option<any>> {
-    try {
-      const result = await Singleton.getQuizzesInstance().createTopic(body)
-      return onSuccess(result)
-    } catch (error: any) {
-      logError(error, req)
-      return onError(error, this)
-    }
-  }
-
-  @Put('topic')
-  @Example<any>(
-    {
-      data: {},
-      success: true,
-      message: 'Success',
-      count: 1
-    },
-    'Success'
-  )
-  public async updateTopic(
-    @Request() req: ExpressRequest,
-    @Body() body: InputUpdateTopic,
-    @Query() topic_id: string
-  ): Promise<Option<any>> {
-    try {
-      const result = await Singleton.getQuizzesInstance().updateTopic(topic_id, body)
-      return onSuccess(result)
-    } catch (error: any) {
-      logError(error, req)
-      return onError(error, this)
-    }
-  }
-
-  @Get('topic')
-  @Example<any>(
-    {
-      data: {},
-      success: true,
-      message: 'Success',
-      count: 1
-    },
-    'Success'
-  )
-  public async getQuiz(
-    @Request() req: ExpressRequest,
-    @Query() topic_id: string
-  ): Promise<Option<IUser>> {
-    try {
-      const result = await Singleton.getQuizzesInstance().getTopicById(topic_id)
-      return onSuccess(result)
-    } catch (error: any) {
-      logError(error, req)
-      return onError(error, this)
-    }
-  }
-
-  @Get('topic/list')
-  @Example<any>(
-    {
-      data: {},
-      success: true,
-      message: 'Success',
-      count: 1
-    },
-    'Success'
-  )
-  public async getAllTopics(@Request() req: ExpressRequest): Promise<Option<IUser>> {
-    try {
-      const result = await Singleton.getQuizzesInstance().getAllTopics()
-      return onSuccess(result)
-    } catch (error: any) {
-      logError(error, req)
-      return onError(error, this)
-    }
-  }
-
-  @Delete('topic')
-  @Example<any>(
-    {
-      data: {},
-      success: true,
-      message: 'Success',
-      count: 1
-    },
-    'Success'
-  )
-  public async deleteTopic(
-    @Request() req: ExpressRequest,
-    @Query() topic_id: string
-  ): Promise<Option<any>> {
-    try {
-      const result = await Singleton.getQuizzesInstance().deleteTopic(topic_id)
-      return onSuccess(result)
-    } catch (error: any) {
-      logError(error, req)
-      return onError(error, this)
-    }
-  }
-
-  @Post('topic/quiz')
-  @Example<any>(
-    {
-      data: {},
-      success: true,
-      message: 'Success',
-      count: 1
-    },
-    'Success'
-  )
-  public async addQuizToTopic(
-    @Request() req: ExpressRequest,
-    @Query() topic_id: string,
     @Body() body: InputCreateQuiz
   ): Promise<Option<any>> {
     try {
-      const result = await Singleton.getQuizzesInstance().addQuizToTopic(topic_id, body)
+      const result = await Singleton.getQuizzesInstance().createQuiz(body)
       return onSuccess(result)
     } catch (error: any) {
       logError(error, req)
@@ -164,7 +50,27 @@ export class QuizzesController extends Controller {
     }
   }
 
-  @Get('topic/quiz')
+  @Get('quiz/list')
+  @Example<any>(
+    {
+      data: {},
+      success: true,
+      message: 'Success',
+      count: 1
+    },
+    'Success'
+  )
+  public async getAllQuizzes(@Request() req: ExpressRequest): Promise<Option<any>> {
+    try {
+      const result = await Singleton.getQuizzesInstance().getAllQuizzes()
+      return onSuccess(result)
+    } catch (error: any) {
+      logError(error, req)
+      return onError(error, this)
+    }
+  }
+
+  @Get('quiz')
   @Example<any>(
     {
       data: {},
@@ -176,11 +82,10 @@ export class QuizzesController extends Controller {
   )
   public async getQuizById(
     @Request() req: ExpressRequest,
-    @Query() topic_id: string,
     @Query() quiz_id: string
   ): Promise<Option<any>> {
     try {
-      const result = await Singleton.getQuizzesInstance().getQuizById(topic_id, quiz_id)
+      const result = await Singleton.getQuizzesInstance().getQuizById(quiz_id)
       return onSuccess(result)
     } catch (error: any) {
       logError(error, req)
@@ -188,30 +93,7 @@ export class QuizzesController extends Controller {
     }
   }
 
-  @Get('topic/quiz/list')
-  @Example<any>(
-    {
-      data: {},
-      success: true,
-      message: 'Success',
-      count: 1
-    },
-    'Success'
-  )
-  public async getQuizzesByTopic(
-    @Request() req: ExpressRequest,
-    @Query() topic_id: string
-  ): Promise<Option<any>> {
-    try {
-      const result = await Singleton.getQuizzesInstance().getQuizzesByTopic(topic_id)
-      return onSuccess(result)
-    } catch (error: any) {
-      logError(error, req)
-      return onError(error, this)
-    }
-  }
-
-  @Put('topic/quiz')
+  @Put('quiz')
   @Example<any>(
     {
       data: {},
@@ -223,12 +105,11 @@ export class QuizzesController extends Controller {
   )
   public async updateQuiz(
     @Request() req: ExpressRequest,
-    @Query() topic_id: string,
     @Query() quiz_id: string,
     @Body() body: InputUpdateQuiz
   ): Promise<Option<any>> {
     try {
-      const result = await Singleton.getQuizzesInstance().updateQuiz(topic_id, quiz_id, body)
+      const result = await Singleton.getQuizzesInstance().updateQuiz(quiz_id, body)
       return onSuccess(result)
     } catch (error: any) {
       logError(error, req)
@@ -236,7 +117,7 @@ export class QuizzesController extends Controller {
     }
   }
 
-  @Delete('topic/quiz')
+  @Delete('quiz')
   @Example<any>(
     {
       data: {},
@@ -248,11 +129,10 @@ export class QuizzesController extends Controller {
   )
   public async deleteQuiz(
     @Request() req: ExpressRequest,
-    @Query() topic_id: string,
     @Query() quiz_id: string
   ): Promise<Option<any>> {
     try {
-      const result = await Singleton.getQuizzesInstance().deleteQuiz(topic_id, quiz_id)
+      const result = await Singleton.getQuizzesInstance().deleteQuiz(quiz_id)
       return onSuccess(result)
     } catch (error: any) {
       logError(error, req)
@@ -260,7 +140,7 @@ export class QuizzesController extends Controller {
     }
   }
 
-  @Post('topic/quiz/question')
+  @Post('quiz/question')
   @Example<any>(
     {
       data: {},
@@ -272,12 +152,11 @@ export class QuizzesController extends Controller {
   )
   public async addQuestionToQuiz(
     @Request() req: ExpressRequest,
-    @Query() topic_id: string,
     @Query() quiz_id: string,
     @Body() body: InputCreateQuestion
   ): Promise<Option<any>> {
     try {
-      const result = await Singleton.getQuizzesInstance().addQuestionToQuiz(topic_id, quiz_id, body)
+      const result = await Singleton.getQuizzesInstance().addQuestionToQuiz(quiz_id, body)
       return onSuccess(result)
     } catch (error: any) {
       logError(error, req)
@@ -285,7 +164,7 @@ export class QuizzesController extends Controller {
     }
   }
 
-  @Delete('topic/quiz/question')
+  @Delete('quiz/question')
   @Example<any>(
     {
       data: {},
@@ -297,12 +176,11 @@ export class QuizzesController extends Controller {
   )
   public async deleteQuestion(
     @Request() req: ExpressRequest,
-    @Query() topic_id: string,
     @Query() quiz_id: string,
     @Query() question_id: string
   ): Promise<Option<any>> {
     try {
-      const result = Singleton.getQuizzesInstance().deleteQuestion(topic_id, quiz_id, question_id)
+      const result = await Singleton.getQuizzesInstance().deleteQuestion(quiz_id, question_id)
       return onSuccess(result)
     } catch (error: any) {
       logError(error, req)
@@ -310,7 +188,7 @@ export class QuizzesController extends Controller {
     }
   }
 
-  @Get('topic/quiz/question')
+  @Get('quiz/question')
   @Example<any>(
     {
       data: {},
@@ -322,13 +200,12 @@ export class QuizzesController extends Controller {
   )
   public async getQuestionsByQuiz(
     @Request() req: ExpressRequest,
-    @Query() topic_id: string,
     @Query() quiz_id: string,
     @Query() count: string,
     @Query() difficulty: string
   ): Promise<Option<any>> {
     try {
-      const result = await Singleton.getQuizzesInstance().getQuestionsByQuiz(topic_id, quiz_id, parseInt(count), difficulty)
+      const result = await Singleton.getQuizzesInstance().getQuestionsByQuiz(quiz_id, parseInt(count), difficulty)
       return onSuccess(result)
     } catch (error: any) {
       logError(error, req)
@@ -336,7 +213,7 @@ export class QuizzesController extends Controller {
     }
   }
 
-  @Put('topic/quiz/question')
+  @Put('quiz/question')
   @Example<any>(
     {
       data: {},
@@ -348,13 +225,12 @@ export class QuizzesController extends Controller {
   )
   public async updateQuestion(
     @Request() req: ExpressRequest,
-    @Query() topic_id: string,
     @Query() quiz_id: string,
     @Query() question_id: string,
     @Body() body: InputUpdateQuestion
   ): Promise<Option<any>> {
     try {
-      const result = await Singleton.getQuizzesInstance().updateQuestion(topic_id, quiz_id, question_id, body)
+      const result = await Singleton.getQuizzesInstance().updateQuestion(quiz_id, question_id, body)
       return onSuccess(result)
     } catch (error: any) {
       logError(error, req)
@@ -362,7 +238,7 @@ export class QuizzesController extends Controller {
     }
   }
 
-  @Get('topic/quiz/random-question')
+  @Get('quiz/random-question')
   @Example<any>(
     {
       data: {},

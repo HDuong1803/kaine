@@ -15,7 +15,7 @@ const USER_ROLE = {
   USER: 0
 }
 
-const TOPIC_STATUS = {
+const QUIZZES_STATUS = {
   ONGOING: 'ongoing',
   UPCOMING: 'upcoming',
   ENDED: 'ended'
@@ -89,7 +89,7 @@ const Constant = {
     ADMIN_NOT_FOUND: 'Admin not found'
   },
   USER_ROLE,
-  TOPIC_STATUS,
+  QUIZZES_STATUS,
   SHIPPING_PRICE: 0
 }
 

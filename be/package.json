@@ -8,11 +8,10 @@
     "start": "node build/src/server.js",
     "run": "yarn concurrently \"nodemon\" \"nodemon -x tsoa spec-and-routes\" && tsc && node build/src/server.js",
     "dev": "docker-compose -f ./docker-compose.local.yml up -d --build && yarn concurrently \"nodemon\" \"nodemon -x tsoa spec-and-routes\"",
-    "dev:db": "docker-compose -f ./docker-compose.local.yml up -d --build",
+    "dev:db": "docker compose -f ./docker-compose.local.yml up -d --build",
     "format": "yarn prettier --write .",
     "lint": "eslint --ext .ts src",
-    "docker": "docker-compose up -d --build",
-    "postinstall": "husky install"
+    "docker": "docker-compose up -d --build"
   },
   "keywords": [],
   "author": "",

@@ -8,19 +8,13 @@ interface Question {
   correct_answer: string
 }
 
-interface Quiz {
-  quiz_id: Types.ObjectId
-  difficulty_level: 'easy' | 'medium' | 'hard'
+export interface QuizzesAttributes extends Document {
+  quizzes_id: Types.ObjectId
+  quizzes_name: string
+  quizzes_description: string
+  quizzes_image: string
+  quizzes_status: 'ongoing' | 'upcoming' | 'ended'
   questions: Question[]
-}
-
-export interface TopicAttributes extends Document {
-  topic_id: Types.ObjectId
-  topic_name: string
-  topic_description: string
-  topic_image: string
-  topic_status: 'ongoing' | 'upcoming' | 'ended'
-  quizzes: Quiz[]
 }
 
 const questionSchema = new Schema<Question>({
@@ -35,32 +29,22 @@ const questionSchema = new Schema<Question>({
   correct_answer: { type: String, required: true }
 })
 
-const quizSchema = new Schema<Quiz>({
-  quiz_id: { type: Schema.Types.ObjectId, auto: true },
-  difficulty_level: {
-    type: String,
-    enum: ['easy', 'medium', 'hard'],
-    required: true
-  },
-  questions: { type: [questionSchema], required: true }
-})
-
-const topicSchema = new Schema<TopicAttributes>(
+const quizzesSchema = new Schema<QuizzesAttributes>(
   {
-    topic_id: { type: Schema.Types.ObjectId, auto: true, unique: true },
-    topic_name: { type: String, required: true, index: true },
-    topic_description: { type: String, required: true },
-    topic_image: { type: String, required: true },
-    topic_status: {
+    quizzes_id: { type: Schema.Types.ObjectId, auto: true },
+    quizzes_name: { type: String, required: true, index: true },
+    quizzes_description: { type: String, required: true },
+    quizzes_image: { type: String, required: true },
+    quizzes_status: {
       type: String,
       enum: ['ongoing', 'upcoming', 'ended'],
       default: 'upcoming'
     },
-    quizzes: { type: [quizSchema], required: true }
+    questions: { type: [questionSchema], required: true }
   },
   {
     timestamps: true
   }
 )
 
-export const quizzes = mongoose.model<TopicAttributes>('quizzes', topicSchema)
+export const quizzes = mongoose.model<QuizzesAttributes>('quizzes', quizzesSchema)

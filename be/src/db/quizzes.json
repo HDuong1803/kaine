@@ -1,566 +1,522 @@
 [
     {
-        "topic_name": "Blockchain Basics",
-        "topic_description": "Introduction to fundamental blockchain concepts.",
-        "topic_image": "blockchain_basics.jpg",
-        "topic_status": "ongoing",
-        "quizzes": [
+        "quizzes_name": "Blockchain Basics",
+        "quizzes_description": "Introduction to fundamental blockchain concepts.",
+        "quizzes_image": "blockchain_basics.jpg",
+        "quizzes_status": "ongoing",
+        "questions": [
             {
-                "difficulty_level": "easy",
-                "questions": [
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is the main purpose of blockchain technology?",
-                        "options": [
-                            "To track data",
-                            "To enable decentralized transactions",
-                            "To store files",
-                            "To run websites"
-                        ],
-                        "correct_answer": "To enable decentralized transactions"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "Who invented Bitcoin?",
-                        "options": [
-                            "Elon Musk",
-                            "Vitalik Buterin",
-                            "Satoshi Nakamoto",
-                            "Mark Zuckerberg"
-                        ],
-                        "correct_answer": "Satoshi Nakamoto"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is a 'block' in blockchain?",
-                        "options": [
-                            "A type of cryptocurrency",
-                            "A file containing data",
-                            "A decentralized network",
-                            "A security protocol"
-                        ],
-                        "correct_answer": "A file containing data"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is the maximum supply of Bitcoin?",
-                        "options": [
-                            "21 million",
-                            "100 million",
-                            "Infinite",
-                            "50 million"
-                        ],
-                        "correct_answer": "21 million"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is a 'node' in blockchain?",
-                        "options": [
-                            "A block",
-                            "A participant in the network",
-                            "A cryptocurrency",
-                            "A security protocol"
-                        ],
-                        "correct_answer": "A participant in the network"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "What is the main purpose of blockchain technology?",
+                "options": [
+                    "To track data",
+                    "To enable decentralized transactions",
+                    "To store files",
+                    "To run websites"
+                ],
+                "correct_answer": "To enable decentralized transactions"
             },
             {
-                "difficulty_level": "medium",
-                "questions": [
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What does a 'hash function' do in blockchain?",
-                        "options": [
-                            "Stores data",
-                            "Hashes blocks together",
-                            "Generates a unique identifier for data",
-                            "Connects nodes"
-                        ],
-                        "correct_answer": "Generates a unique identifier for data"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "Which consensus mechanism does Bitcoin use?",
-                        "options": [
-                            "Proof of Stake",
-                            "Proof of Work",
-                            "Delegated Proof of Stake",
-                            "Proof of Authority"
-                        ],
-                        "correct_answer": "Proof of Work"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is a 'smart contract'?",
-                        "options": [
-                            "A cryptocurrency",
-                            "An automated contract that executes when conditions are met",
-                            "A blockchain protocol",
-                            "A token standard"
-                        ],
-                        "correct_answer": "An automated contract that executes when conditions are met"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "Which programming language is commonly used to write Ethereum smart contracts?",
-                        "options": [
-                            "Java",
-                            "Solidity",
-                            "Python",
-                            "C++"
-                        ],
-                        "correct_answer": "Solidity"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "Which of these blockchains uses a Proof of Stake consensus mechanism?",
-                        "options": [
-                            "Ethereum (post-merge)",
-                            "Bitcoin",
-                            "Litecoin",
-                            "Monero"
-                        ],
-                        "correct_answer": "Ethereum (post-merge)"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "Who invented Bitcoin?",
+                "options": [
+                    "Elon Musk",
+                    "Vitalik Buterin",
+                    "Satoshi Nakamoto",
+                    "Mark Zuckerberg"
+                ],
+                "correct_answer": "Satoshi Nakamoto"
             },
             {
-                "difficulty_level": "hard",
-                "questions": [
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is 'sharding' in blockchain?",
-                        "options": [
-                            "A scaling technique",
-                            "A consensus mechanism",
-                            "A hashing method",
-                            "A token standard"
-                        ],
-                        "correct_answer": "A scaling technique"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What does the term '51% attack' mean?",
-                        "options": [
-                            "Attack on hash functions",
-                            "Control of over 51% of the network by a malicious entity",
-                            "Data breach on a blockchain",
-                            "Transaction speed increase"
-                        ],
-                        "correct_answer": "Control of over 51% of the network by a malicious entity"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is 'InterPlanetary File System' (IPFS) in blockchain context?",
-                        "options": [
-                            "A database",
-                            "A peer-to-peer file storage protocol",
-                            "A cryptocurrency",
-                            "A smart contract standard"
-                        ],
-                        "correct_answer": "A peer-to-peer file storage protocol"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is a 'zero-knowledge proof'?",
-                        "options": [
-                            "Proof without revealing information",
-                            "Proof with partial disclosure",
-                            "A type of transaction",
-                            "A new blockchain protocol"
-                        ],
-                        "correct_answer": "Proof without revealing information"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is 'atomic swap'?",
-                        "options": [
-                            "Direct trading between cryptocurrencies without intermediaries",
-                            "A mining protocol",
-                            "An encryption technique",
-                            "A transaction type"
-                        ],
-                        "correct_answer": "Direct trading between cryptocurrencies without intermediaries"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "What is a 'block' in blockchain?",
+                "options": [
+                    "A type of cryptocurrency",
+                    "A file containing data",
+                    "A decentralized network",
+                    "A security protocol"
+                ],
+                "correct_answer": "A file containing data"
+            },
+            {
+                "difficulty": "easy",
+                "question_text": "What is the maximum supply of Bitcoin?",
+                "options": [
+                    "21 million",
+                    "100 million",
+                    "Infinite",
+                    "50 million"
+                ],
+                "correct_answer": "21 million"
+            },
+            {
+                "difficulty": "easy",
+                "question_text": "What is a 'node' in blockchain?",
+                "options": [
+                    "A block",
+                    "A participant in the network",
+                    "A cryptocurrency",
+                    "A security protocol"
+                ],
+                "correct_answer": "A participant in the network"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What does a 'hash function' do in blockchain?",
+                "options": [
+                    "Stores data",
+                    "Hashes blocks together",
+                    "Generates a unique identifier for data",
+                    "Connects nodes"
+                ],
+                "correct_answer": "Generates a unique identifier for data"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "Which consensus mechanism does Bitcoin use?",
+                "options": [
+                    "Proof of Stake",
+                    "Proof of Work",
+                    "Delegated Proof of Stake",
+                    "Proof of Authority"
+                ],
+                "correct_answer": "Proof of Work"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is a 'smart contract'?",
+                "options": [
+                    "A cryptocurrency",
+                    "An automated contract that executes when conditions are met",
+                    "A blockchain protocol",
+                    "A token standard"
+                ],
+                "correct_answer": "An automated contract that executes when conditions are met"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "Which programming language is commonly used to write Ethereum smart contracts?",
+                "options": [
+                    "Java",
+                    "Solidity",
+                    "Python",
+                    "C++"
+                ],
+                "correct_answer": "Solidity"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "Which of these blockchains uses a Proof of Stake consensus mechanism?",
+                "options": [
+                    "Ethereum (post-merge)",
+                    "Bitcoin",
+                    "Litecoin",
+                    "Monero"
+                ],
+                "correct_answer": "Ethereum (post-merge)"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is 'sharding' in blockchain?",
+                "options": [
+                    "A scaling technique",
+                    "A consensus mechanism",
+                    "A hashing method",
+                    "A token standard"
+                ],
+                "correct_answer": "A scaling technique"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What does the term '51% attack' mean?",
+                "options": [
+                    "Attack on hash functions",
+                    "Control of over 51% of the network by a malicious entity",
+                    "Data breach on a blockchain",
+                    "Transaction speed increase"
+                ],
+                "correct_answer": "Control of over 51% of the network by a malicious entity"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is 'InterPlanetary File System' (IPFS) in blockchain context?",
+                "options": [
+                    "A database",
+                    "A peer-to-peer file storage protocol",
+                    "A cryptocurrency",
+                    "A smart contract standard"
+                ],
+                "correct_answer": "A peer-to-peer file storage protocol"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is a 'zero-knowledge proof'?",
+                "options": [
+                    "Proof without revealing information",
+                    "Proof with partial disclosure",
+                    "A type of transaction",
+                    "A new blockchain protocol"
+                ],
+                "correct_answer": "Proof without revealing information"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is 'atomic swap'?",
+                "options": [
+                    "Direct trading between cryptocurrencies without intermediaries",
+                    "A mining protocol",
+                    "An encryption technique",
+                    "A transaction type"
+                ],
+                "correct_answer": "Direct trading between cryptocurrencies without intermediaries"
             }
         ]
     },
     {
-        "topic_name": "Blockchain Advanced",
-        "topic_description": "Deeper insights into blockchain concepts and applications.",
-        "topic_image": "blockchain_advanced.jpg",
-        "topic_status": "upcoming",
-        "quizzes": [
+        "quizzes_name": "Blockchain Advanced",
+        "quizzes_description": "Deeper insights into blockchain concepts and applications.",
+        "quizzes_image": "blockchain_advanced.jpg",
+        "quizzes_status": "upcoming",
+        "questions": [
             {
-                "difficulty_level": "easy",
-                "questions": [
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is a 'token' in blockchain?",
-                        "options": [
-                            "A digital asset",
-                            "A block",
-                            "A node",
-                            "A hash"
-                        ],
-                        "correct_answer": "A digital asset"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What does 'P2P' stand for in blockchain networks?",
-                        "options": [
-                            "Private to Public",
-                            "Peer to Peer",
-                            "Public to Private",
-                            "Permission to Protocol"
-                        ],
-                        "correct_answer": "Peer to Peer"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "Which blockchain introduced the concept of smart contracts?",
-                        "options": [
-                            "Bitcoin",
-                            "Ethereum",
-                            "Ripple",
-                            "Litecoin"
-                        ],
-                        "correct_answer": "Ethereum"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is the primary benefit of using blockchain?",
-                        "options": [
-                            "Centralization",
-                            "Transparency and security",
-                            "High transaction costs",
-                            "Limited scalability"
-                        ],
-                        "correct_answer": "Transparency and security"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What does 'Dapp' stand for?",
-                        "options": [
-                            "Decentralized application",
-                            "Digital app",
-                            "Data access point",
-                            "Distributed authorization protocol"
-                        ],
-                        "correct_answer": "Decentralized application"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "What is a 'token' in blockchain?",
+                "options": [
+                    "A digital asset",
+                    "A block",
+                    "A node",
+                    "A hash"
+                ],
+                "correct_answer": "A digital asset"
             },
             {
-                "difficulty_level": "medium",
-                "questions": [
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is the primary function of 'oracles' in blockchain?",
-                        "options": [
-                            "To execute smart contracts",
-                            "To connect off-chain data to smart contracts",
-                            "To provide anonymity",
-                            "To verify consensus mechanisms"
-                        ],
-                        "correct_answer": "To connect off-chain data to smart contracts"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is 'ERC-20'?",
-                        "options": [
-                            "A token standard on the Ethereum blockchain",
-                            "A consensus protocol",
-                            "A type of private blockchain",
-                            "An encryption algorithm"
-                        ],
-                        "correct_answer": "A token standard on the Ethereum blockchain"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is 'gas' in the context of Ethereum?",
-                        "options": [
-                            "The fuel for Ethereum mining rigs",
-                            "The transaction fee for executing smart contracts",
-                            "A block validation method",
-                            "A peer-to-peer transaction"
-                        ],
-                        "correct_answer": "The transaction fee for executing smart contracts"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "Which consensus mechanism does Ethereum use after 'The Merge'?",
-                        "options": [
-                            "Proof of Work",
-                            "Proof of Stake",
-                            "Delegated Proof of Stake",
-                            "Proof of Authority"
-                        ],
-                        "correct_answer": "Proof of Stake"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is 'Layer 2 scaling' in blockchain?",
-                        "options": [
-                            "Adding more nodes to the network",
-                            "Building a second layer of blockchain for improved speed",
-                            "Replacing Layer 1",
-                            "Increasing block size"
-                        ],
-                        "correct_answer": "Building a second layer of blockchain for improved speed"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "What does 'P2P' stand for in blockchain networks?",
+                "options": [
+                    "Private to Public",
+                    "Peer to Peer",
+                    "Public to Private",
+                    "Permission to Protocol"
+                ],
+                "correct_answer": "Peer to Peer"
             },
             {
-                "difficulty_level": "hard",
-                "questions": [
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is 'Merkle Tree' used for in blockchain?",
-                        "options": [
-                            "To execute smart contracts",
-                            "To efficiently and securely verify data integrity",
-                            "To calculate transaction fees",
-                            "To store private keys"
-                        ],
-                        "correct_answer": "To efficiently and securely verify data integrity"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is 'decentralized finance' (DeFi)?",
-                        "options": [
-                            "Centralized banking on blockchain",
-                            "Decentralized financial services using blockchain",
-                            "A type of blockchain",
-                            "The process of mining in blockchain"
-                        ],
-                        "correct_answer": "Decentralized financial services using blockchain"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is 'rollup' technology in blockchain scaling?",
-                        "options": [
-                            "A way to bundle transactions and execute them off-chain",
-                            "A type of smart contract",
-                            "A consensus mechanism",
-                            "A hashing method"
-                        ],
-                        "correct_answer": "A way to bundle transactions and execute them off-chain"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is the role of 'zk-SNARKs' in blockchain?",
-                        "options": [
-                            "A zero-knowledge proof method to enhance privacy",
-                            "A consensus mechanism",
-                            "A smart contract standard",
-                            "A Layer 2 scaling solution"
-                        ],
-                        "correct_answer": "A zero-knowledge proof method to enhance privacy"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What does 'EVM compatibility' mean for a blockchain?",
-                        "options": [
-                            "Ability to use Ethereum-based tools and smart contracts",
-                            "A consensus algorithm",
-                            "A transaction method",
-                            "A type of token"
-                        ],
-                        "correct_answer": "Ability to use Ethereum-based tools and smart contracts"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "Which blockchain introduced the concept of smart contracts?",
+                "options": [
+                    "Bitcoin",
+                    "Ethereum",
+                    "Ripple",
+                    "Litecoin"
+                ],
+                "correct_answer": "Ethereum"
+            },
+            {
+                "difficulty": "easy",
+                "question_text": "What is the primary benefit of using blockchain?",
+                "options": [
+                    "Centralization",
+                    "Transparency and security",
+                    "High transaction costs",
+                    "Limited scalability"
+                ],
+                "correct_answer": "Transparency and security"
+            },
+            {
+                "difficulty": "easy",
+                "question_text": "What does 'Dapp' stand for?",
+                "options": [
+                    "Decentralized application",
+                    "Digital app",
+                    "Data access point",
+                    "Distributed authorization protocol"
+                ],
+                "correct_answer": "Decentralized application"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is the primary function of 'oracles' in blockchain?",
+                "options": [
+                    "To execute smart contracts",
+                    "To connect off-chain data to smart contracts",
+                    "To provide anonymity",
+                    "To verify consensus mechanisms"
+                ],
+                "correct_answer": "To connect off-chain data to smart contracts"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is 'ERC-20'?",
+                "options": [
+                    "A token standard on the Ethereum blockchain",
+                    "A consensus protocol",
+                    "A type of private blockchain",
+                    "An encryption algorithm"
+                ],
+                "correct_answer": "A token standard on the Ethereum blockchain"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is 'gas' in the context of Ethereum?",
+                "options": [
+                    "The fuel for Ethereum mining rigs",
+                    "The transaction fee for executing smart contracts",
+                    "A block validation method",
+                    "A peer-to-peer transaction"
+                ],
+                "correct_answer": "The transaction fee for executing smart contracts"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "Which consensus mechanism does Ethereum use after 'The Merge'?",
+                "options": [
+                    "Proof of Work",
+                    "Proof of Stake",
+                    "Delegated Proof of Stake",
+                    "Proof of Authority"
+                ],
+                "correct_answer": "Proof of Stake"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is 'Layer 2 scaling' in blockchain?",
+                "options": [
+                    "Adding more nodes to the network",
+                    "Building a second layer of blockchain for improved speed",
+                    "Replacing Layer 1",
+                    "Increasing block size"
+                ],
+                "correct_answer": "Building a second layer of blockchain for improved speed"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is 'Merkle Tree' used for in blockchain?",
+                "options": [
+                    "To execute smart contracts",
+                    "To efficiently and securely verify data integrity",
+                    "To calculate transaction fees",
+                    "To store private keys"
+                ],
+                "correct_answer": "To efficiently and securely verify data integrity"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is 'decentralized finance' (DeFi)?",
+                "options": [
+                    "Centralized banking on blockchain",
+                    "Decentralized financial services using blockchain",
+                    "A type of blockchain",
+                    "The process of mining in blockchain"
+                ],
+                "correct_answer": "Decentralized financial services using blockchain"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is 'rollup' technology in blockchain scaling?",
+                "options": [
+                    "A way to bundle transactions and execute them off-chain",
+                    "A type of smart contract",
+                    "A consensus mechanism",
+                    "A hashing method"
+                ],
+                "correct_answer": "A way to bundle transactions and execute them off-chain"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is the role of 'zk-SNARKs' in blockchain?",
+                "options": [
+                    "A zero-knowledge proof method to enhance privacy",
+                    "A consensus mechanism",
+                    "A smart contract standard",
+                    "A Layer 2 scaling solution"
+                ],
+                "correct_answer": "A zero-knowledge proof method to enhance privacy"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What does 'EVM compatibility' mean for a blockchain?",
+                "options": [
+                    "Ability to use Ethereum-based tools and smart contracts",
+                    "A consensus algorithm",
+                    "A transaction method",
+                    "A type of token"
+                ],
+                "correct_answer": "Ability to use Ethereum-based tools and smart contracts"
             }
         ]
     },
     {
-        "topic_name": "Blockchain Security",
-        "topic_description": "Understanding security aspects in blockchain networks.",
-        "topic_image": "blockchain_security.jpg",
-        "topic_status": "ended",
-        "quizzes": [
+        "quizzes_name": "Blockchain Security",
+        "quizzes_description": "Understanding security aspects in blockchain networks.",
+        "quizzes_image": "blockchain_security.jpg",
+        "quizzes_status": "ended",
+        "questions": [
             {
-                "difficulty_level": "easy",
-                "questions": [
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is the role of 'encryption' in blockchain?",
-                        "options": [
-                            "Data privacy",
-                            "Transaction speed",
-                            "Scalability",
-                            "Mining"
-                        ],
-                        "correct_answer": "Data privacy"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is a 'private key'?",
-                        "options": [
-                            "A type of node",
-                            "A digital signature used to access funds",
-                            "A public identifier",
-                            "A consensus mechanism"
-                        ],
-                        "correct_answer": "A digital signature used to access funds"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What does 'immutability' mean in blockchain?",
-                        "options": [
-                            "Data can be changed anytime",
-                            "Data cannot be altered once recorded",
-                            "Data is stored temporarily",
-                            "Data can be accessed only by miners"
-                        ],
-                        "correct_answer": "Data cannot be altered once recorded"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What is 'public key' used for?",
-                        "options": [
-                            "Accessing private networks",
-                            "Identifying participants in the network",
-                            "Signing transactions",
-                            "Executing smart contracts"
-                        ],
-                        "correct_answer": "Identifying participants in the network"
-                    },
-                    {
-                        "difficulty": "easy",
-                        "question_text": "What does 'consensus' mean in a blockchain network?",
-                        "options": [
-                            "A security protocol",
-                            "Agreement on the state of the blockchain",
-                            "A type of smart contract",
-                            "Transaction validation"
-                        ],
-                        "correct_answer": "Agreement on the state of the blockchain"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "What is the role of 'encryption' in blockchain?",
+                "options": [
+                    "Data privacy",
+                    "Transaction speed",
+                    "Scalability",
+                    "Mining"
+                ],
+                "correct_answer": "Data privacy"
             },
             {
-                "difficulty_level": "medium",
-                "questions": [
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is a 'cold wallet' in blockchain?",
-                        "options": [
-                            "An online storage for tokens",
-                            "An offline storage for private keys",
-                            "A software for transaction processing",
-                            "A hot storage solution"
-                        ],
-                        "correct_answer": "An offline storage for private keys"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "Which of these is an example of a '51% attack'?",
-                        "options": [
-                            "Blocking all transactions",
-                            "Controlling the majority of network mining power to alter transactions",
-                            "Creating new tokens",
-                            "Implementing a new smart contract"
-                        ],
-                        "correct_answer": "Controlling the majority of network mining power to alter transactions"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is 'double-spending' in blockchain security?",
-                        "options": [
-                            "A consensus mechanism",
-                            "The act of spending the same digital currency more than once",
-                            "A mining technique",
-                            "A data verification method"
-                        ],
-                        "correct_answer": "The act of spending the same digital currency more than once"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is 'phishing' in the context of blockchain?",
-                        "options": [
-                            "Mining validation method",
-                            "Fake transactions to fool users",
-                            "A form of fraud where users are tricked into giving sensitive information",
-                            "A smart contract flaw"
-                        ],
-                        "correct_answer": "A form of fraud where users are tricked into giving sensitive information"
-                    },
-                    {
-                        "difficulty": "medium",
-                        "question_text": "What is a 'Sybil attack'?",
-                        "options": [
-                            "An attack where a single entity creates multiple identities",
-                            "An attack on the encryption protocol",
-                            "An attempt to steal private keys",
-                            "A form of double-spending"
-                        ],
-                        "correct_answer": "An attack where a single entity creates multiple identities"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "What is a 'private key'?",
+                "options": [
+                    "A type of node",
+                    "A digital signature used to access funds",
+                    "A public identifier",
+                    "A consensus mechanism"
+                ],
+                "correct_answer": "A digital signature used to access funds"
             },
             {
-                "difficulty_level": "hard",
-                "questions": [
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is 'Elliptic Curve Cryptography' (ECC) used for in blockchain?",
-                        "options": [
-                            "Data storage",
-                            "Increasing mining speed",
-                            "Generating public and private keys",
-                            "Scalability solutions"
-                        ],
-                        "correct_answer": "Generating public and private keys"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is a 'replay attack'?",
-                        "options": [
-                            "An attack where transactions are duplicated on another blockchain",
-                            "A hacking attempt on the miner nodes",
-                            "A data corruption attempt",
-                            "An attack that spoofs node addresses"
-                        ],
-                        "correct_answer": "An attack where transactions are duplicated on another blockchain"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What does 'multi-signature' in blockchain security refer to?",
-                        "options": [
-                            "A private key for each transaction",
-                            "A requirement for multiple signatures to approve a transaction",
-                            "A consensus mechanism",
-                            "A digital signature technique"
-                        ],
-                        "correct_answer": "A requirement for multiple signatures to approve a transaction"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is a 'hash collision' and why is it a security risk?",
-                        "options": [
-                            "Two different inputs produce the same hash, compromising data integrity",
-                            "A process to increase mining rewards",
-                            "A type of smart contract bug",
-                            "A common type of data encryption"
-                        ],
-                        "correct_answer": "Two different inputs produce the same hash, compromising data integrity"
-                    },
-                    {
-                        "difficulty": "hard",
-                        "question_text": "What is 'Quantum Resistance' in blockchain security?",
-                        "options": [
-                            "The ability of blockchain to withstand attacks from quantum computers",
-                            "A faster hashing technique",
-                            "A consensus mechanism",
-                            "A transaction approval protocol"
-                        ],
-                        "correct_answer": "The ability of blockchain to withstand attacks from quantum computers"
-                    }
-                ]
+                "difficulty": "easy",
+                "question_text": "What does 'immutability' mean in blockchain?",
+                "options": [
+                    "Data can be changed anytime",
+                    "Data cannot be altered once recorded",
+                    "Data is stored temporarily",
+                    "Data can be accessed only by miners"
+                ],
+                "correct_answer": "Data cannot be altered once recorded"
+            },
+            {
+                "difficulty": "easy",
+                "question_text": "What is 'public key' used for?",
+                "options": [
+                    "Accessing private networks",
+                    "Identifying participants in the network",
+                    "Signing transactions",
+                    "Executing smart contracts"
+                ],
+                "correct_answer": "Identifying participants in the network"
+            },
+            {
+                "difficulty": "easy",
+                "question_text": "What does 'consensus' mean in a blockchain network?",
+                "options": [
+                    "A security protocol",
+                    "Agreement on the state of the blockchain",
+                    "A type of smart contract",
+                    "Transaction validation"
+                ],
+                "correct_answer": "Agreement on the state of the blockchain"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is a 'cold wallet' in blockchain?",
+                "options": [
+                    "An online storage for tokens",
+                    "An offline storage for private keys",
+                    "A software for transaction processing",
+                    "A hot storage solution"
+                ],
+                "correct_answer": "An offline storage for private keys"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "Which of these is an example of a '51% attack'?",
+                "options": [
+                    "Blocking all transactions",
+                    "Controlling the majority of network mining power to alter transactions",
+                    "Creating new tokens",
+                    "Implementing a new smart contract"
+                ],
+                "correct_answer": "Controlling the majority of network mining power to alter transactions"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is 'double-spending' in blockchain security?",
+                "options": [
+                    "A consensus mechanism",
+                    "The act of spending the same digital currency more than once",
+                    "A mining technique",
+                    "A data verification method"
+                ],
+                "correct_answer": "The act of spending the same digital currency more than once"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is 'phishing' in the context of blockchain?",
+                "options": [
+                    "Mining validation method",
+                    "Fake transactions to fool users",
+                    "A form of fraud where users are tricked into giving sensitive information",
+                    "A smart contract flaw"
+                ],
+                "correct_answer": "A form of fraud where users are tricked into giving sensitive information"
+            },
+            {
+                "difficulty": "medium",
+                "question_text": "What is a 'Sybil attack'?",
+                "options": [
+                    "An attack where a single entity creates multiple identities",
+                    "An attack on the encryption protocol",
+                    "An attempt to steal private keys",
+                    "A form of double-spending"
+                ],
+                "correct_answer": "An attack where a single entity creates multiple identities"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is 'Elliptic Curve Cryptography' (ECC) used for in blockchain?",
+                "options": [
+                    "Data storage",
+                    "Increasing mining speed",
+                    "Generating public and private keys",
+                    "Scalability solutions"
+                ],
+                "correct_answer": "Generating public and private keys"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is a 'replay attack'?",
+                "options": [
+                    "An attack where transactions are duplicated on another blockchain",
+                    "A hacking attempt on the miner nodes",
+                    "A data corruption attempt",
+                    "An attack that spoofs node addresses"
+                ],
+                "correct_answer": "An attack where transactions are duplicated on another blockchain"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What does 'multi-signature' in blockchain security refer to?",
+                "options": [
+                    "A private key for each transaction",
+                    "A requirement for multiple signatures to approve a transaction",
+                    "A consensus mechanism",
+                    "A digital signature technique"
+                ],
+                "correct_answer": "A requirement for multiple signatures to approve a transaction"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is a 'hash collision' and why is it a security risk?",
+                "options": [
+                    "Two different inputs produce the same hash, compromising data integrity",
+                    "A process to increase mining rewards",
+                    "A type of smart contract bug",
+                    "A common type of data encryption"
+                ],
+                "correct_answer": "Two different inputs produce the same hash, compromising data integrity"
+            },
+            {
+                "difficulty": "hard",
+                "question_text": "What is 'Quantum Resistance' in blockchain security?",
+                "options": [
+                    "The ability of blockchain to withstand attacks from quantum computers",
+                    "A faster hashing technique",
+                    "A consensus mechanism",
+                    "A transaction approval protocol"
+                ],
+                "correct_answer": "The ability of blockchain to withstand attacks from quantum computers"
             }
         ]
     }
+    
 ]
